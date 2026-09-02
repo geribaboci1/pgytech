@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="PGYTECH × LEGEFILMS — ONEGO: MADE TO MOVE.">
+<title>PGYTECH × LEGEFILMS — ONEGO: MADE TO MOVE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080808;--text:#f4f4f0;--muted:#9a9a96;--soft:#c8c8c2;--line:rgba(255,255,255,.14);--max:1280px;--pad:clamp(20px,4vw,64px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:inherit;text-decoration:none}img,video{display:block;max-width:100%}
+.container{width:min(var(--max),calc(100% - 2*var(--pad)));margin:auto}section{padding:clamp(90px,11vw,160px) 0;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:"Space Grotesk",Arial,sans-serif;font-weight:500;letter-spacing:-.045em;margin:0}.kicker{color:var(--muted);font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px}.section-title{font-size:clamp(42px,6vw,82px);line-height:.96;max-width:980px}.copy{color:var(--soft);font-size:clamp(16px,1.5vw,21px);line-height:1.6}.small{color:var(--muted);font-size:12px;line-height:1.65}
+header{position:fixed;z-index:20;top:0;left:0;width:100%;padding:21px var(--pad);display:flex;align-items:center;justify-content:space-between;mix-blend-mode:difference;color:#fff}.brand{font-size:13px;font-weight:600;letter-spacing:.13em}nav{display:flex;align-items:center;gap:26px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}nav a{opacity:.86}.nav-cta{border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:9px 14px}
+.hero{height:100svh;min-height:680px;position:relative;overflow:hidden;display:flex;align-items:flex-end;border:0;padding:0}.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.08) 40%,rgba(0,0,0,.88))}.hero-content{position:relative;z-index:2;width:min(var(--max),calc(100% - 2*var(--pad)));margin:auto;padding-bottom:clamp(50px,8vw,105px)}.eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;margin-bottom:22px}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.hero h1{font-size:clamp(58px,10vw,150px);line-height:.84;max-width:1100px}.hero p{max-width:650px;margin:30px 0 0;color:rgba(255,255,255,.78);font-size:clamp(15px,1.5vw,20px);line-height:1.5}.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.pill{border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:12px 18px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.pill:hover{background:#fff;color:#000}
+.intro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}.intro-copy{max-width:620px}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}.story-card{border-top:1px solid var(--line);padding-top:22px}.story-num{font-size:10px;color:var(--muted);letter-spacing:.15em}.story-card h3{font-size:30px;margin-top:52px}.story-card p{color:#aaa;font-size:15px;line-height:1.6;margin-top:16px}.product-line{margin-top:28px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#ddd}
+.campaign{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.campaign-list{border-top:1px solid var(--line)}.campaign-item{padding:26px 0;border-bottom:1px solid var(--line)}.campaign-item .label{font-size:10px;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}.campaign-item h3{font-size:32px;margin-top:10px}.campaign-item p{color:#aaa;line-height:1.6;margin:12px 0 0}
+.creator{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center}.profile{aspect-ratio:1/1;overflow:hidden;background:#111}.profile img{width:100%;height:100%;object-fit:cover}.creator-copy{max-width:720px}.creator h2{font-size:clamp(45px,6vw,80px)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:55px;border-top:1px solid var(--line);padding-top:25px}.stat strong{display:block;font-family:"Space Grotesk";font-size:clamp(32px,4vw,55px);font-weight:500;letter-spacing:-.05em}.stat span{display:block;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:8px}
+.reels-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:55px}.reel{background:#101010;min-height:620px;display:flex;justify-content:center;align-items:flex-start;overflow:hidden}.reel blockquote{margin:0!important;width:100%!important;min-width:0!important;max-width:540px!important}
+.logo-row{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;align-items:center;margin-top:60px}.logo-box{height:90px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:18px}.logo-box img{max-height:42px;max-width:80%;object-fit:contain;filter:grayscale(1);opacity:.8}
+.investment{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end}.price{font-family:"Space Grotesk";font-size:clamp(64px,10vw,135px);letter-spacing:-.07em;line-height:.85}.includes{border-top:1px solid var(--line)}.includes div{padding:17px 0;border-bottom:1px solid var(--line);font-size:14px;color:#ccc}
+.final{text-align:center;border-bottom:0;padding-bottom:90px}.final h2{font-size:clamp(55px,9vw,125px);line-height:.88}.final p{max-width:600px;margin:28px auto 0}.final .pill{display:inline-flex;margin-top:30px}footer{padding:25px var(--pad);display:flex;justify-content:space-between;color:#777;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){nav a:not(.nav-cta){display:none}.intro-grid,.creator,.campaign,.investment{grid-template-columns:1fr;gap:40px}.story-grid{grid-template-columns:1fr}.story-card h3{margin-top:25px}.stats{grid-template-columns:repeat(2,1fr);row-gap:35px}.reels-grid{grid-template-columns:1fr}.reel{min-height:540px}.logo-row{grid-template-columns:repeat(2,1fr)}.logo-box:last-child{grid-column:1/-1}}
+@media(max-width:520px){.hero h1{font-size:18vw}section{padding:90px 0}.stats{grid-template-columns:1fr 1fr}.logo-row{gap:10px}.logo-box{height:75px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="#top">LEGEFILMS</a>
+<nav>
+<a href="#campaign">Campaign</a><a href="#work">Work</a><a href="#investment">Investment</a>
+<a class="nav-cta" href="mailto:geri@legefilms.com?subject=PGYTECH%20ONEGO%20Campaign">Let's talk</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero">
+<video autoplay muted loop playsinline preload="metadata"><source src="hero.mp4" type="video/mp4"></video>
+<div class="hero-content">
+<div class="eyebrow">PGYTECH × LEGEFILMS</div>
+<h1>ONEGO:<br>MADE TO MOVE.</h1>
+<p>A cinematic creator campaign built around the way I actually shoot — moving through a city, traveling light, and carrying only what the moment calls for.</p>
+<div class="pills"><a class="pill" href="#campaign">View campaign</a><a class="pill" href="mailto:geri@legefilms.com?subject=PGYTECH%20ONEGO%20Campaign">Get in touch</a></div>
+</div>
+</section>
+
+<section>
+<div class="container intro-grid reveal"><div><div class="kicker">The idea</div><h2 class="section-title">One creator.<br>One system.<br>Every move.</h2></div><div class="intro-copy"><p class="copy">The OneGo system fits naturally into my real workflow: a lightweight bag for spontaneous shooting, a larger setup for shoot-to-edit days, and one cinematic story that connects the two.</p></div></div>
+<div class="container story-grid">
+<article class="story-card reveal"><div class="story-num">01 / EVERYDAY SHOOTER</div><h3>Rope Strap Bag</h3><p>Central Park. A camera, a couple lenses, and no reason to carry a full backpack. The story is about being ready when a shot appears.</p><div class="product-line">OneGo Rope Strap Bag</div></article>
+<article class="story-card reveal"><div class="story-num">02 / SHOOT → EDIT</div><h3>Roamer Tote Backpack</h3><p>One day in NYC from capture to edit. The setup grows with the work — camera gear in, laptop out, footage moving before the day is over.</p><div class="product-line">OneGo Roamer Tote Backpack · 18L</div></article>
+<article class="story-card reveal"><div class="story-num">03 / THE ONEGO JOURNEY</div><h3>Home → NYC</h3><p>The hero film follows the complete journey: packing, airport, flight, city, shooting, and editing — showing the OneGo system in motion.</p><div class="product-line">Hero Campaign Film</div></article>
+</div>
+</section>
+
+<section id="campaign">
+<div class="container campaign reveal"><div><div class="kicker">Campaign direction</div><h2 class="section-title">Designed to feel like content — not an ad.</h2></div>
+<div class="campaign-list">
+<div class="campaign-item"><div class="label">01 / Everyday</div><h3>Central Park</h3><p>Natural movement, candid shooting, compact gear and a lightweight carry. The product earns its place by solving a real problem.</p></div>
+<div class="campaign-item"><div class="label">02 / Workflow</div><h3>Shoot → Edit</h3><p>A creator day in NYC showing the Roamer carrying the complete setup from camera to laptop and back again.</p></div>
+<div class="campaign-item"><div class="label">03 / Story</div><h3>The OneGo Journey</h3><p>A cinematic travel piece that turns the entire OneGo system into one continuous visual story.</p></div>
+</div></div>
+</section>
+
+<section>
+<div class="container creator reveal"><div class="profile"><img src="profile.jpg" alt="LEGEFILMS creator"></div><div class="creator-copy"><div class="kicker">The creator</div><h2>Real-world camera work, built for movement.</h2><p class="copy">I’m Geri, the filmmaker behind LEGEFILMS. My work lives around concerts, travel, cities and fast-moving creative environments — the exact situations where the right carry system makes a difference.</p><p class="copy">This campaign puts PGYTECH into that world naturally, with the products integrated into the actual process rather than presented as a traditional product demonstration.</p>
+<div class="stats"><div class="stat"><strong>100K+</strong><span>Followers</span></div><div class="stat"><strong>250M+</strong><span>Views</span></div><div class="stat"><strong>18.4%</strong><span>Engagement</span></div><div class="stat"><strong>8×</strong><span>Industry average</span></div></div>
+<p class="small" style="margin-top:18px">Engagement rate based on the last 30 videos, as of August 30, 2026.</p></div></div>
+</section>
+
+<section id="work">
+<div class="container reveal"><div class="kicker">Selected work</div><h2 class="section-title">The kind of work this campaign would live beside.</h2>
+<div class="reels-grid">
+<div class="reel"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DcEh0xKyDd7/" data-instgrm-version="14"></blockquote></div>
+<div class="reel"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DSm1EkLCAym/" data-instgrm-version="14"></blockquote></div>
+<div class="reel"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reels/DaIrk77IYOz/" data-instgrm-version="14"></blockquote></div>
+<div class="reel"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reels/DWeEbXrEmEt/" data-instgrm-version="14"></blockquote></div>
+</div></div>
+</section>
+
+<section>
+<div class="container reveal"><div class="kicker">Trusted by</div><h2 class="section-title">Brands already trusting the work.</h2>
+<div class="logo-row"><div class="logo-box"><img src="logo1.png" alt="DJI"></div><div class="logo-box"><img src="logo2.png" alt="Insta360"></div><div class="logo-box"><img src="logo3.png" alt="Universal Music Group"></div><div class="logo-box"><img src="logo4.png" alt="UTA"></div><div class="logo-box"><img src="logo5.png" alt="Blueground Homes"></div></div>
+</div>
+</section>
+
+<section id="investment">
+<div class="container investment reveal"><div><div class="kicker">Campaign investment</div><div class="price">$6,000</div><p class="copy" style="max-width:620px;margin-top:30px">A complete three-video creative campaign, produced as one connected visual system and distributed across creator platforms.</p></div>
+<div class="includes"><div>Creative concept + campaign development</div><div>Three original cinematic videos</div><div>Professional production, editing + color</div><div>Creator distribution across social platforms</div><div>Organic brand usage included</div><div>Paid advertising usage available separately</div></div></div>
+</section>
+
+<section>
+<div class="container reveal"><div class="kicker">Why it works</div><h2 class="section-title">The product becomes part of the story.</h2><div style="max-width:720px;margin-top:35px"><p class="copy">Instead of asking the audience to stop and watch a product review, the campaign lets them watch a creator move. The OneGo system is demonstrated through real decisions: what gets packed, what gets carried, when a smaller bag is enough, and when the full setup comes out.</p><p class="copy">That makes the campaign useful to PGYTECH beyond a single post — it creates a visual library of premium creator-first content that can live organically alongside the brand.</p></div></div>
+</section>
+
+<section class="final"><div class="container reveal"><div class="kicker">Next move</div><h2>LET'S MAKE<br>IT MOVE.</h2><p class="copy">Three films. One connected story. Built around how creators actually move through the world.</p><a class="pill" href="mailto:geri@legefilms.com?subject=PGYTECH%20ONEGO%20Campaign">geri@legefilms.com</a></div></section>
+</main>
+
+<footer><span>© 2026 LEGEFILMS</span><span>PGYTECH × ONEGO</span></footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  const items=document.querySelectorAll(".reveal");
+  const observer=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
+    });
+  },{threshold:.12});
+  items.forEach(function(item){observer.observe(item);});
+  if(window.instgrm&&window.instgrm.Embeds){window.instgrm.Embeds.process();}
+});
+</script>
+</body>
+</html>
